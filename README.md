@@ -34,6 +34,6 @@
 
 *домашняя директория*
 
+Terraform Playbook: [cloud-init](./cloud-init.yml) [network](./network.tf) [security-groups](./security-groups.tf) [vms](vms.tf) 
 
-# Задание 2
 

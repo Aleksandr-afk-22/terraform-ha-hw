@@ -1,0 +1,16 @@
+#cloud-config
+users:
+  - name: user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINAW+yWljMlQpgEha4/GCHqv7TATw1V+w8hx/S2VXb18 aleks@ansible-control
+
+package_update: true
+packages:
+  - nginx
+
+runcmd:
+  - systemctl enable --now nginx
+  - echo "Nginx installed at $(date)" > /tmp/nginx-ready.log
