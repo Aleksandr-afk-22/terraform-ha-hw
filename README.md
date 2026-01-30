@@ -30,9 +30,12 @@
 
 **Решение:**
 
-![home-dir](screenshots/hom-dir.png)
+![yc-lb](screenshots/yc-lb.png)
 
-*домашняя директория*
+![nlb](screenshots/nlb.png)
+
+![curl-nlb](screenshots/curl-nlb.png)
+
 
 Terraform Playbook: [cloud-init](./cloud-init.yml) [network](./network.tf) [security-groups](./security-groups.tf) [vms](vms.tf) 
 
